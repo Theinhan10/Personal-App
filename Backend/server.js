@@ -20,8 +20,11 @@ const db = require('./models')
 
 //router
 const postRouter = require('./Routes/Posts')
-app.use("/posts", postRouter)
+const Todo = require("./Routes/Todo")
 
+
+app.use("/posts", postRouter);
+app.use("/todo", Todo);
 
 
 
