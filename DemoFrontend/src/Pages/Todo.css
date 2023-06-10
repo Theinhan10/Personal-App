@@ -1,0 +1,107 @@
+/*For the whole todo page*/
+.todo{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #232427;
+    height: 100vh;
+}
+
+/*For each div container*/
+.TodoList{
+    margin: 30px auto;
+    border: 2px solid #c3c6ce;
+    background-color: white;
+    width: 30%;
+    height: 85%;
+    border-radius: 20px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: auto;
+    
+}
+
+.TodoList h1{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* CSS for the button*/
+.TodoList .addTaskButton{
+    position: sticky;
+    bottom: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 0px 150px;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+}
+
+.addTaskButton:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.addTaskButton:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.addTaskButton::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+.addTaskButton::after{
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+}
+
+
+.menuTodo{
+    display: flex;
+    background-color:#232427;
+}
+
+
+
+.TodoList:nth-child(1){
+    background-color: inherit;
+    border: none;
+}
+
+.TodoList:nth-child(2){
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+}
+
+.TodoList:nth-child(3){
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+}
+
+/*CSS for switching the dark and light mode*/
+#light{
+    background-color: #c3caea;
+}
+
+#dark{
+    background-color: #232427;
+}
+
+

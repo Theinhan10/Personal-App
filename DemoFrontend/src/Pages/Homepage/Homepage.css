@@ -1,0 +1,24 @@
+.homepage{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #232427;
+}
+
+
+
+.card-div{
+  margin-bottom: 10px;
+
+}
+
+
+/*CSS for switching the dark and light mode*/
+#light{
+    background-color: #c3caea;
+}
+
+#dark{
+    background-color: #232427;
+}
+
